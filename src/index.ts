@@ -80,4 +80,4 @@ class UnicodeRange {
   }
 }
 
-export default UnicodeRange;
+export { UnicodeRange };

@@ -1,5 +1,5 @@
 import test, { ExecutionContext } from 'ava';
-import UnicodeRange from '../../src';
+import { UnicodeRange } from '../../src';
 
 function macro(t: ExecutionContext<{}>, input: any) {
   t.throws(
