@@ -20,6 +20,7 @@ jobs:
       - run:
           name: Run tests
           command: yarn test
+      - run: npx codecov
       - save_cache:
           paths:
             - node_modules
