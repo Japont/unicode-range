@@ -11,11 +11,13 @@
   ],
   "scripts": {
     "build": "tsc",
-    "test": "ava"
+    "test": "nyc ava"
   },
   "dependencies": {},
   "devDependencies": {
     "ava": "^1.0.0-beta.6",
+    "nyc": "^12.0.2",
+    "source-map-support": "^0.5.6",
     "ts-node": "^7.0.0",
     "typescript": "^2.9.2"
   },
@@ -31,7 +33,23 @@
       "ts"
     ],
     "require": [
-      "ts-node/register"
+      "ts-node/register",
+      "source-map-support/register"
+    ]
+  },
+  "nyc": {
+    "all": true,
+    "include": [
+      "src/**/*.ts"
+    ],
+    "reporter": [
+      "html",
+      "json",
+      "text",
+      "text-summary"
+    ],
+    "extension": [
+      ".ts"
     ]
   },
   "types": "lib/index.d.ts"
