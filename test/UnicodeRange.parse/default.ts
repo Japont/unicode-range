@@ -34,5 +34,17 @@ const testCaseList = [
     values: ['U+??'],
     expected: closedInterval(0x0, 0xff),
   },
+  {
+    values: ['U+20', 'U+30'],
+    expected: [0x20, 0x30],
+  },
+  {
+    values: ['U+30-39', 'U+40-49'],
+    expected: [...closedInterval(0x30, 0x39), ...closedInterval(0x40, 0x49)],
+  },
+  {
+    values: ['U+3a-3f', 'U+3?'],
+    expected: closedInterval(0x30, 0x3f),
+  },
 ];
 testCaseList.forEach(testCase => test(macro, testCase.values, testCase.expected));

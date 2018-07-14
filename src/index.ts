@@ -38,7 +38,7 @@ class UnicodeRange {
       }
     }
 
-    return Array.from(result);
+    return Array.from(result).sort((a, b) => a - b);
   }
 
   static stringify(_arr: number[]): string[] {
