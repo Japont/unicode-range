@@ -20,7 +20,7 @@ jobs:
       - run:
           name: Run tests
           command: yarn test
-      - run: npx codecov
+      - run: npx codecov -f coverage/*.json
       - save_cache:
           paths:
             - node_modules
