@@ -5,8 +5,12 @@
   "author": "3846masa <3846masahiro+git@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build": "tsc",
     "test": "ava"
   },
+  "files": [
+    "lib"
+  ],
   "devDependencies": {
     "ava": "^1.0.0-beta.6",
     "ts-node": "^7.0.0",
