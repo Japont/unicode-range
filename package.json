@@ -1,5 +1,6 @@
 {
   "name": "@japont/unicode-range",
+  "description": "Unicode-range parser/builder.",
   "license": "MIT",
   "author": "3846masa <3846masahiro+git@gmail.com>",
   "version": "1.0.0",
