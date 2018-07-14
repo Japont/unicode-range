@@ -1,5 +1,16 @@
 # @japont/unicode-range
 
+[![NPM-Badge]][NPM]
+[![CircleCI-Badge]][CircleCI]
+[![Codecov-Badge]][Codecov]
+
+[NPM-Badge]: https://img.shields.io/npm/v/@japont/unicode-range.svg?style=flat-square
+[NPM]: https://www.npmjs.com/package/@japont/unicode-range
+[CircleCI-Badge]: https://img.shields.io/circleci/project/github/Japont/unicode-range.svg?style=flat-square
+[CircleCI]: https://circleci.com/gh/Japont/unicode-range
+[Codecov-Badge]: https://img.shields.io/codecov/c/github/Japont/unicode-range.svg?style=flat-square
+[Codecov]: https://codecov.io/gh/Japont/unicode-range
+
 > Unicode-range parser/builder.
 
 ## Install
@@ -34,4 +45,6 @@ PRs accepted.
 
 ## License
 
-MIT (c) 3846masa
+MIT (c) [3846masa]
+
+[3846masa]: https://3846masa.netlify.com
