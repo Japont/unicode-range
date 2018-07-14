@@ -41,7 +41,7 @@ jobs:
           command: yarn build
       - run:
           name: Publish package
-          command: npm publish
+          command: npm publish --access public
             
 workflows:
   version: 2
@@ -50,12 +50,12 @@ workflows:
       - test:
           filters:
             tags:
-              ignore: /^v.*/
+              only: /^v.*/
       - release:
           requires:
             - test
           filters:
             tags:
-              only: /^src-v.*/
+              only: /^v.*/
             branches:
               ignore: /.*/
