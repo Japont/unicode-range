@@ -4,7 +4,7 @@
   "license": "MIT",
   "author": "3846masa <3846masahiro+git@gmail.com>",
   "repository": "git@github.com:Japont/unicode-range.git",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "lib/index.js",
   "files": [
     "lib"
