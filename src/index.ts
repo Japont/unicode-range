@@ -1,9 +1,16 @@
 class UnicodeRange {
   static REGEXP = /^u\+(?:([0-9a-f]?[0-9a-f?]{1,5})|([0-9a-f]{1,6})-([0-9a-f]{1,6}))?$/i;
 
-  static parse(arr: string[]): number[] {
-    const result = new Set<number>();
+  static splitRanges(ranges: string | string[]): string[] {
+    if (typeof ranges === 'string') {
+      return ranges.replace(/\s*/g, '').split(',');
+    }
+    return ranges;
+  }
 
+  static parse(ranges: string[] | string): number[] {
+    const result = new Set<number>();
+    const arr = UnicodeRange.splitRanges(ranges);
     for (const range of arr) {
       if (!UnicodeRange.REGEXP.test(range)) {
         throw new TypeError(`"${range}" is invalid unicode-range.`);
